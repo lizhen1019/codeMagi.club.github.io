@@ -6,6 +6,7 @@ import './style.css'
 import "./blockquote.css";
 import "./blur.css";
 import "./vp-code.css";
+import PricingPage from './components/PricingPage.vue'
 
 export default {
   extends: DefaultTheme,
@@ -14,6 +15,7 @@ export default {
     })
   },
   enhanceApp({ app, router, siteData }) {
+    app.component('PricingPage', PricingPage)
     // ...
   }
 } satisfies Theme
