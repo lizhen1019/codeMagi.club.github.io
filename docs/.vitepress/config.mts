@@ -1,6 +1,5 @@
 import { defineConfig } from "vitepress";
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "CodeMagi Club",
   description: "We code, we create magic.",
@@ -10,15 +9,18 @@ export default defineConfig({
   ],
   themeConfig: {
     logo: "/images/logo.svg",
+    // 搜索组件中文配置（核心修改）
     search: {
-      provider: 'local'
+      provider: "local",
+      placeholder: "搜索文档...", // 搜索框提示文字（默认：Search...）
+      emptyText: "未找到匹配结果", // 无结果提示文字（默认：No results found）
+      cancelText: "取消", // 取消按钮文字（默认：Cancel）
     },
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
       { text: "Java", link: "/Java" },
       { text: "Python", link: "/Python" },
-      { text: "Vue", link: "/Vue" },
+      { text: "Vue", link: "/vue/" },
       { text: "UniApp", link: "/UniApp" },
       { text: "HarmonyOS", link: "/HarmonyOS" },
       { text: "硬件", link: "/hardware" },
@@ -26,17 +28,19 @@ export default defineConfig({
       { text: "演示", link: "/demo" },
       { text: "价格", link: "/price" },
     ],
-
-    sidebar: [
-      {
-        text: "Examples",
-        items: [
-          { text: "Markdown Examples", link: "/markdown-examples" },
-          { text: "Runtime API Examples", link: "/api-examples" },
-        ],
-      },
-    ],
-
+    sidebar: {
+      "/vue/": [
+        { text: "字体文件导入", link: "/vue/index.md" },
+        { text: "Vue 国际化", link: "/vue/i18n.md" },
+      ],
+    },
+    // 本页目录中文（之前已生效的配置）
+    outlineTitle: "本页目录",
+    docFooter: {
+      prev: "上一页",
+      next: "下一页",
+    },
+    lastUpdatedText: "最后更新时间",
     socialLinks: [
       {
         icon: {

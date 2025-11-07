@@ -1,52 +1,52 @@
 {
-  "hash": "68e92a09",
-  "configHash": "24cf4e39",
-  "lockfileHash": "e4727f94",
-  "browserHash": "7de14cb6",
+  "hash": "2ce791cf",
+  "configHash": "f356ca6c",
+  "lockfileHash": "8f4df0ed",
+  "browserHash": "bafc22f3",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "3194efe3",
+      "fileHash": "c0569275",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "d72317ba",
+      "fileHash": "7806fced",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "d996849b",
+      "fileHash": "69f0546d",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "2e0af1a9",
+      "fileHash": "2b21b57d",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "46c3d9e6",
+      "fileHash": "6f3823de",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "30e18944",
+      "fileHash": "c30e13bb",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-OV36UNJN": {
-      "file": "chunk-OV36UNJN.js"
+    "chunk-ZWPW6XMK": {
+      "file": "chunk-ZWPW6XMK.js"
     },
-    "chunk-JAPIL3UL": {
-      "file": "chunk-JAPIL3UL.js"
+    "chunk-PTZ32WQS": {
+      "file": "chunk-PTZ32WQS.js"
     }
   }
 }
