@@ -12,15 +12,29 @@ export default defineConfig({
     // 搜索组件中文配置（核心修改）
     search: {
       provider: "local",
-      placeholder: "搜索文档...", // 搜索框提示文字（默认：Search...）
-      emptyText: "未找到匹配结果", // 无结果提示文字（默认：No results found）
-      cancelText: "取消", // 取消按钮文字（默认：Cancel）
+      options: {
+        translations: {
+          button: {
+            buttonText: "搜索",
+            buttonAriaLabel: "搜索",
+          },
+          modal: {
+            noResultsText: "没有找到相关内容",
+            resetButtonTitle: "清除搜索",
+            footer: {
+              selectText: "选择",
+              navigateText: "切换",
+              closeText: "关闭",
+            },
+          },
+        },
+      },
     },
     nav: [
       { text: "首页", link: "/" },
       { text: "Java", link: "/Java" },
       { text: "Python", link: "/Python" },
-      { text: "Vue", link: "/vue/" },
+      { text: "Vue", link: "/vue/project" },
       { text: "UniApp", link: "/UniApp" },
       { text: "HarmonyOS", link: "/HarmonyOS" },
       { text: "硬件", link: "/hardware" },
@@ -30,8 +44,31 @@ export default defineConfig({
     ],
     sidebar: {
       "/vue/": [
-        { text: "字体文件导入", link: "/vue/index.md" },
-        { text: "Vue 国际化", link: "/vue/i18n.md" },
+        {
+          text: "配置",
+          collapsed: false,
+          items: [
+            { text: "字体文件导入", link: "/vue/project/index.md" },
+            { text: "Vue 国际化", link: "/vue/project/i18n.md" },
+          ],
+        },
+        {
+          text: "方法",
+          collapsed: false,
+          items:[
+            { text: "WebSocket 连接", link: "/vue/methods/websocket-connect.md" },
+            { text: "PeerJS 连接", link: "/vue/methods/peerjs.md" },
+          ]
+        },
+        {
+          text: "组件",
+          collapsed: false,
+          items:[
+            { text: "Vue3 + Element Plus", link: "/vue/component/element-plus.md" },
+          ]
+        },
+
+        // 
       ],
     },
     // 本页目录中文（之前已生效的配置）
